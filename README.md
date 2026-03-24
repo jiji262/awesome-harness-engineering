@@ -5,6 +5,12 @@ This repository curates public resources directly related to **Harness Engineeri
 - Scope: platform delivery governance, internal developer platforms (IDP), GitOps, and AI-native engineering practice.
 - GitHub tool entries include star counts captured on `2026-03-24`.
 
+## 0) Quick Navigation
+
+- [1) Articles](#1-articles)
+- [2) Open Source Tools (GitHub)](#2-open-source-tools-github)
+- [3) Contribution Notes](#3-contribution-notes)
+
 ## 1) Articles
 
 ### Harness Engineering
@@ -105,6 +111,11 @@ This repository curates public resources directly related to **Harness Engineeri
   How governance, service ownership, and AI workflows need to converge in platform teams.
 - [平台工程在 AI 时代的落地路径（运营视角）](https://mp.weixin.qq.com/s/8D8i8qQvW0o8k5vYfVf8mQ)  
   Operational sequencing for platform capabilities under AI-driven development.
+
+### Community Portals
+
+- [linux.do](https://linux.do/)  
+  A large Chinese software-engineering community with recurring discussions, practical articles, and tooling practice related to platform and AI-native engineering.
 
 ## 2) Open Source Tools (GitHub)
 
@@ -251,3 +262,8 @@ This repository curates public resources directly related to **Harness Engineeri
   Vector database for scalable semantic retrieval in agent systems.
 - [ollama/ollama](https://github.com/ollama/ollama) — **165,986 stars**  
   Local model runtime widely used for AI-native engineering agents.
+
+## 3) Contribution Notes
+
+- Content is limited to resources with direct relevance to Harness Engineering and AI Native Engineering.
+- Each entry is manually curated with short context notes for quick triage.

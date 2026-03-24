@@ -5,6 +5,12 @@
 - 聚焦平台交付治理、内部开发者平台（IDP）、GitOps 与 AI Native 工程实践。
 - 工具条目来自 GitHub 开源项目，并附带 `2026-03-24` 时点的 star 数。
 
+## 0）导航
+
+- [1）文章](#1文章)
+- [2）开源工具（GitHub）](#2开源工具github)
+- [3）补充说明](#3补充说明)
+
 ## 1）文章
 
 ### Harness Engineering
@@ -105,6 +111,11 @@
   讨论平台治理、服务所有权与 AI 工作流的整合。
 - [平台工程在 AI 时代的落地路径（运营视角）](https://mp.weixin.qq.com/s/8D8i8qQvW0o8k5vYfVf8mQ)  
   从运营序列视角拆解平台能力建设步骤。
+
+### 社区与实践平台
+
+- [linux.do](https://linux.do/)  
+  国内技术社区，聚焦工程实践、工具链与 AI Native 落地讨论，内容与本仓库方向高度贴合。
 
 ## 2）开源工具（GitHub）
 
@@ -251,3 +262,8 @@
   面向 AI 应用的向量检索数据库。
 - [ollama/ollama](https://github.com/ollama/ollama)（**165,986 星**）  
   本地模型运行时，常用于 AI-native 开发与评测。
+
+## 3）补充说明
+
+- 条目仅保留与 Harness Engineering 与 AI Native Engineering 高度相关的内容，避免泛化链接。
+- 每条记录都附带简要用途说明，便于快速判断是否继续深入。
