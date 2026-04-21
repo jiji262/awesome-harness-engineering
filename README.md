@@ -3,6 +3,8 @@
 This repository is a curated resource list for **Harness Engineering** and **AI Native Engineering**.
 Entries are filtered for direct relevance. GitHub projects include star counts at collection time.
 
+<b> Special Thanks to </b> [linux.do](https://linux.do)
+
 ## 1) Articles
 
 ### Harness Engineering Foundations
