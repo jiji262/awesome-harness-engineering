@@ -324,6 +324,9 @@
 - [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) — **9,182 星**
   可自托管的 tracing 与 eval 界面，方便回放和排查 agent 工作流。
 
+- [luoyuctl/agenttrace](https://github.com/luoyuctl/agenttrace) — **35 星**
+  面向 AI 编程 Agent 本地会话日志的本地优先 TUI 与报告工具，覆盖成本、token、延迟、工具失败、健康度、diff、报告和 CI 门禁。
+
 ## 4）安全、评测与相关列表
 
 ### 安全与权限
