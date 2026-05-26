@@ -5,6 +5,8 @@ Entries are filtered for direct relevance. GitHub projects include star counts a
 
 <b> Special Thanks to </b> [linux.do](https://linux.do)
 
+Last researched: 2026-05-26 (Asia/Shanghai).
+
 ## 1) Articles
 
 ### Harness Engineering Foundations
@@ -29,6 +31,9 @@ Entries are filtered for direct relevance. GitHub projects include star counts a
 
 - [The Anatomy of an Agent Harness](https://blog.langchain.com/the-anatomy-of-an-agent-harness/)
   Organizes harness design into filesystem, code execution, sandboxing, memory, and context management primitives.
+
+- [Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering](https://arxiv.org/abs/2604.08224)
+  A fresh systems review of why agent capability is increasingly externalized into memory, skills, protocols, and harnesses rather than model weights alone.
 
 ### Harness / Platform Engineering in Practice
 
@@ -63,6 +68,12 @@ Entries are filtered for direct relevance. GitHub projects include star counts a
 
 - [Run Long-Horizon Tasks with Codex](https://developers.openai.com/blog/run-long-horizon-tasks-with-codex/)
   Shows how planning artifacts such as `Plan.md` and `Implement.md` become reusable harness state for long-running work.
+
+- [The next evolution of the Agents SDK](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
+  OpenAI's April 2026 update to the Agents SDK: model-native harness, native sandbox execution, configurable memory, filesystem tools, and built-in support for MCP, skills, and `AGENTS.md` patterns.
+
+- [Scaling Managed Agents: Decoupling the brain from the hands](https://www.anthropic.com/engineering/managed-agents)
+  Anthropic's architecture note on separating session, harness, and sandbox so long-horizon agents can recover from failures and run across changing infrastructure.
 
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
   The canonical reasoning-action-observation loop paper behind most modern agent harness designs.
@@ -110,6 +121,9 @@ Entries are filtered for direct relevance. GitHub projects include star counts a
 
 - [Compiler.next: A Search-Based Compiler to Power the AI-Native Future of Software Engineering](https://arxiv.org/abs/2510.24799)
   Explores compiler-level composition for scale, traceability, and quality control in AI-assisted coding.
+
+- [SemaClaw: A Step Towards General-Purpose Personal AI Agents through Harness Engineering](https://arxiv.org/abs/2604.11548)
+  Presents a personal-agent framework with DAG orchestration, PermissionBridge safety, three-tier context management, and agentic wiki skills.
 
 - [I Saw the Future of Platform Engineering — and It’s Called AI Native Dev](https://platformengineering.com/features/i-saw-the-future-of-platform-engineering-and-its-called-ai-native-dev/)
   Explains how platform operations and handoff patterns change when teams adopt AI-native workflows.
@@ -306,6 +320,47 @@ Entries are filtered for direct relevance. GitHub projects include star counts a
 - [ServiceNow/AgentLab](https://github.com/ServiceNow/AgentLab) — **541 stars**
   Evaluation-oriented platform for testing agent workflows in realistic enterprise tasks.
 
+### Evaluation Frameworks & Agent Benchmarks
+
+- [openai/evals](https://github.com/openai/evals) — **18,536 stars**
+  OpenAI's framework and registry for evaluating LLMs and LLM systems, including private workflow-specific evals.
+
+- [UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) — **2,127 stars**
+  UK AI Security Institute's eval framework with built-in support for tool use, multi-turn dialog, prompt engineering, and model-graded scoring.
+
+- [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — **12,698 stars**
+  Widely used model evaluation harness with many benchmark task implementations, useful as a baseline layer before agent-specific evals.
+
+- [stanford-crfm/helm](https://github.com/stanford-crfm/helm) — **2,800 stars**
+  Stanford CRFM's holistic evaluation framework for reproducible and transparent model and multimodal evaluation.
+
+- [SWE-bench/SWE-bench](https://github.com/SWE-bench/SWE-bench) — **5,015 stars**
+  Canonical repository-level issue-resolution benchmark and execution harness for coding agents.
+
+- [microsoft/SWE-bench-Live](https://github.com/microsoft/SWE-bench-Live) — **192 stars**
+  Continuously updated SWE-bench-style benchmark with monthly curation, MultiLang, and Windows task variants to reduce contamination and staleness.
+
+- [harbor-framework/terminal-bench](https://github.com/harbor-framework/terminal-bench) — **2,264 stars**
+  Terminal agent benchmark for hard shell tasks across software engineering, machine learning, security, data science, and related workflows.
+
+- [EuniAI/TerminalWorld](https://github.com/EuniAI/TerminalWorld) — **12 stars**
+  New May 2026 benchmark and data engine derived from real terminal recordings; useful for tracking authentic shell-workflow evaluation.
+
+- [sierra-research/tau-bench](https://github.com/sierra-research/tau-bench) — **1,246 stars**
+  Tool-Agent-User benchmark for multi-turn enterprise customer-service workflows with APIs and policy constraints.
+
+- [sierra-research/tau2-bench](https://github.com/sierra-research/tau2-bench) — **1,237 stars**
+  Current tau-bench family repo, now including knowledge, voice, task-quality fixes, and richer tool-user simulation modes.
+
+- [ServiceNow/BrowserGym](https://github.com/ServiceNow/BrowserGym) — **1,229 stars**
+  Gym-style environment for web agents, bundling MiniWoB, WebArena, VisualWebArena, WorkArena, AssistantBench, OpenApps, and TimeWarp.
+
+- [xlang-ai/OSWorld](https://github.com/xlang-ai/OSWorld) — **2,875 stars**
+  Multimodal computer-use benchmark in real OS environments, useful for desktop-agent harness and GUI automation evaluation.
+
+- [claw-bench/claw-bench](https://github.com/claw-bench/claw-bench) — **171 stars**
+  New agent benchmark with pytest-based verifiers and broad task domains; useful to watch as a fresh harness-oriented benchmark experiment.
+
 ### Sandboxing, Observability & Evaluation
 
 - [e2b-dev/E2B](https://github.com/e2b-dev/E2B) — **11,594 stars**
@@ -333,8 +388,17 @@ Entries are filtered for direct relevance. GitHub projects include star counts a
 - [Beyond Permission Prompts](https://www.anthropic.com/engineering/beyond-permission-prompts)
   Argues for structured authorization systems instead of relying on free-form natural-language permission prompts.
 
+- [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents)
+  Explains agent risk through the four-layer model of model, harness, tools, and environment, then maps trustworthy-agent principles to concrete product controls.
+
+- [Designing AI agents to resist prompt injection](https://openai.com/index/designing-agents-to-resist-prompt-injection/)
+  Reframes prompt injection as a social-engineering problem and argues for source-sink controls, confirmations, and sandboxed action boundaries instead of input filtering alone.
+
 - [Model Context Protocol — Authorization](https://modelcontextprotocol.io/specification/2025-11-05/basic/authorization)
   The MCP authorization spec for OAuth-style external service access in agent environments.
+
+- [Claude Code auto mode: a safer way to skip permissions](https://www.anthropic.com/engineering/claude-code-auto-mode)
+  Details a dual-layer defense using prompt-injection probes and action classifiers to reduce approval fatigue without falling back to fully unsafe no-permission mode.
 
 - [Prompt Injection — Simon Willison's Series](https://simonwillison.net/series/prompt-injection/)
   A practical, field-tested explanation of indirect prompt injection risk in tool-using agents.
@@ -346,6 +410,15 @@ Entries are filtered for direct relevance. GitHub projects include star counts a
   A defense catalog covering input filtering, output sanitization, isolation, and trust-boundary hardening.
 
 ### Evals & Verification
+
+- [Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies](https://arxiv.org/abs/2605.03596)
+  May 2026 benchmark for workspace-level agents, stressing large file dependency graphs, cross-file retrieval, contextual reasoning, and adaptive decision-making.
+
+- [TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks](https://arxiv.org/abs/2605.22535)
+  May 2026 benchmark generated from in-the-wild terminal recordings, complementing expert-curated terminal benchmarks with authentic shell workflows.
+
+- [SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?](https://arxiv.org/abs/2603.15401)
+  Evaluates whether injected agent skills materially improve real software engineering tasks, with paired runs and execution-based verification.
 
 - [Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
   Explains how to design outcome, process, and trajectory evaluations that match real agent behavior.
@@ -364,6 +437,9 @@ Entries are filtered for direct relevance. GitHub projects include star counts a
 
 - [Towards a Science of AI Agent Reliability](https://arxiv.org/abs/2602.16666)
   Proposes reliability metrics that separate capability gains from true operational robustness.
+
+- [VeRO: An Evaluation Harness for Agents to Optimize Agents](https://arxiv.org/abs/2602.22480)
+  Introduces a dedicated evaluation harness for agent-optimizing-agent workflows with versioned snapshots, budget-controlled runs, and structured traces.
 
 ### Related Awesome Lists
 

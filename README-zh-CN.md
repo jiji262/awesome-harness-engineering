@@ -3,6 +3,8 @@
 本仓库聚焦 **Harness Engineering** 与 **AI Native Engineering** 的高相关英文与中文资料，并补充 GitHub 开源工具。
 仅保留与平台工程、AI Native 工程实践直接相关的条目，工具均附带当时抓取的 GitHub star 数。
 
+最近检索：2026-05-26（Asia/Shanghai）。
+
 ## 1）文章
 
 ### Harness Engineering 基础与方法论
@@ -27,6 +29,9 @@
 
 - [The Anatomy of an Agent Harness](https://blog.langchain.com/the-anatomy-of-an-agent-harness/)
   将 harness 结构化为文件系统、代码执行、沙箱、记忆和上下文管理五类原语。
+
+- [Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering](https://arxiv.org/abs/2604.08224)
+  一篇最新的系统综述，解释为什么 agent 能力越来越依赖记忆、skills、协议和 harness 这些外化组件，而不只是模型权重本身。
 
 ### Harness / 平台工程实践
 
@@ -61,6 +66,12 @@
 
 - [Run Long-Horizon Tasks with Codex](https://developers.openai.com/blog/run-long-horizon-tasks-with-codex/)
   展示 `Plan.md`、`Implement.md` 这类计划工件如何成为长任务里的可复用 harness 状态。
+
+- [The next evolution of the Agents SDK](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)
+  OpenAI 在 2026 年 4 月对 Agents SDK 的更新，强调 model-native harness、原生 sandbox、可配置记忆，以及对 MCP、skills 和 `AGENTS.md` 模式的内建支持。
+
+- [Scaling Managed Agents: Decoupling the brain from the hands](https://www.anthropic.com/engineering/managed-agents)
+  Anthropic 对托管式长任务智能体架构的总结，核心是把 session、harness 和 sandbox 解耦，提升恢复能力与基础设施适配性。
 
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
   几乎所有现代 agent harness 都会回到的经典推理-行动-观察循环论文。
@@ -108,6 +119,9 @@
 
 - [Compiler.next：面向 AI-Native 软件工程的检索式编译器](https://arxiv.org/abs/2510.24799)
   探索搜索式编译机制对 AI 辅助代码生成可扩展性和可追踪性的价值。
+
+- [SemaClaw: A Step Towards General-Purpose Personal AI Agents through Harness Engineering](https://arxiv.org/abs/2604.11548)
+  提出一个面向个人智能体的框架，结合 DAG 编排、PermissionBridge 安全系统、三层上下文管理和 agentic wiki skills。
 
 - [平台工程的未来是 AI Native 开发](https://platformengineering.com/features/i-saw-the-future-of-platform-engineering-and-its-called-ai-native-dev/)
   强调平台团队如何重构流程边界以适配智能体和 AI 参与的交付链路。
@@ -304,6 +318,47 @@
 - [ServiceNow/AgentLab](https://github.com/ServiceNow/AgentLab) — **541 星**
   以企业级任务为入口评估智能体工作流可行性。
 
+### 评测框架与 Agent Benchmarks
+
+- [openai/evals](https://github.com/openai/evals) — **18,536 星**
+  OpenAI 的 LLM 与 LLM 系统评测框架和 benchmark registry，也支持面向私有工作流的自定义 eval。
+
+- [UKGovernmentBEIS/inspect_ai](https://github.com/UKGovernmentBEIS/inspect_ai) — **2,127 星**
+  UK AI Security Institute 的评测框架，内建工具调用、多轮对话、prompt engineering 和 model-graded scoring 支持。
+
+- [EleutherAI/lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness) — **12,698 星**
+  广泛使用的模型评测 harness，覆盖大量 benchmark task，适合作为 agent-specific eval 之前的基线层。
+
+- [stanford-crfm/helm](https://github.com/stanford-crfm/helm) — **2,800 星**
+  Stanford CRFM 的 holistic evaluation 框架，重视可复现、透明的模型与多模态评测。
+
+- [SWE-bench/SWE-bench](https://github.com/SWE-bench/SWE-bench) — **5,015 星**
+  代码智能体领域最核心的仓库级 issue 修复 benchmark 与执行 harness。
+
+- [microsoft/SWE-bench-Live](https://github.com/microsoft/SWE-bench-Live) — **192 星**
+  持续更新的 SWE-bench-like benchmark，包含月度任务更新、MultiLang 与 Windows 任务，用于降低污染和过期问题。
+
+- [harbor-framework/terminal-bench](https://github.com/harbor-framework/terminal-bench) — **2,264 星**
+  面向终端智能体的困难任务 benchmark，覆盖软件工程、机器学习、安全、数据科学等 shell 工作流。
+
+- [EuniAI/TerminalWorld](https://github.com/EuniAI/TerminalWorld) — **12 星**
+  2026 年 5 月的新 benchmark 和数据引擎，来自真实终端录制，适合跟踪真实 shell 工作流评测方向。
+
+- [sierra-research/tau-bench](https://github.com/sierra-research/tau-bench) — **1,246 星**
+  面向多轮企业客服场景的 Tool-Agent-User benchmark，强调 API 调用和业务策略约束。
+
+- [sierra-research/tau2-bench](https://github.com/sierra-research/tau2-bench) — **1,237 星**
+  当前 tau-bench 家族主仓，已加入 knowledge、voice、任务质量修复和更丰富的 tool-user simulation 模式。
+
+- [ServiceNow/BrowserGym](https://github.com/ServiceNow/BrowserGym) — **1,229 星**
+  面向 Web agent 的 Gym-style 环境，内置 MiniWoB、WebArena、VisualWebArena、WorkArena、AssistantBench、OpenApps 和 TimeWarp。
+
+- [xlang-ai/OSWorld](https://github.com/xlang-ai/OSWorld) — **2,875 星**
+  在真实操作系统环境中评测多模态 computer-use agent，适合桌面智能体与 GUI 自动化 harness 设计。
+
+- [claw-bench/claw-bench](https://github.com/claw-bench/claw-bench) — **171 星**
+  新的 agent benchmark，使用 pytest verifier 和多领域任务，适合作为 harness-oriented benchmark 的新实验观察对象。
+
 ### 沙箱、可观测与评测
 
 - [e2b-dev/E2B](https://github.com/e2b-dev/E2B) — **11,594 星**
@@ -331,8 +386,17 @@
 - [Beyond Permission Prompts](https://www.anthropic.com/engineering/beyond-permission-prompts)
   说明为什么不能只靠自然语言权限提示，而应把授权做成结构化系统。
 
+- [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents)
+  用 model、harness、tools、environment 四层模型解释 agent 风险，并把“可信智能体”原则落到具体产品控制点上。
+
+- [Designing AI agents to resist prompt injection](https://openai.com/index/designing-agents-to-resist-prompt-injection/)
+  把 prompt injection 重新定义为社会工程问题，强调 source-sink 控制、确认机制和沙箱边界，而不是只做输入过滤。
+
 - [Model Context Protocol — Authorization](https://modelcontextprotocol.io/specification/2025-11-05/basic/authorization)
   MCP 中关于 OAuth 式外部服务访问的授权规范。
+
+- [Claude Code auto mode: a safer way to skip permissions](https://www.anthropic.com/engineering/claude-code-auto-mode)
+  介绍 Claude Code auto mode 的双层防线：输入侧的 prompt-injection probe，加上动作侧的分类器审批，用更低打断成本替代完全跳过权限。
 
 - [Prompt Injection — Simon Willison's Series](https://simonwillison.net/series/prompt-injection/)
   系统解释间接提示词注入为何会在工具型 agent 中形成真实攻击面。
@@ -344,6 +408,15 @@
   收录输入过滤、输出净化、隔离和信任边界加固等实战防护手段。
 
 ### 评测与验证
+
+- [Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies](https://arxiv.org/abs/2605.03596)
+  2026 年 5 月发布的 workspace-level agent benchmark，重点考察大规模文件依赖图、跨文件检索、上下文推理和自适应决策。
+
+- [TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks](https://arxiv.org/abs/2605.22535)
+  2026 年 5 月发布的终端 agent benchmark，任务来自真实终端录制，可补充专家手工设计类 Terminal-Bench 的覆盖面。
+
+- [SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?](https://arxiv.org/abs/2603.15401)
+  用 paired runs 与执行型验证评估注入 agent skills 是否真的能提升真实软件工程任务表现。
 
 - [Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)
   解释 outcome、process 与 trajectory 评测该怎样设计，才能贴近真实 agent 行为。
@@ -362,6 +435,9 @@
 
 - [Towards a Science of AI Agent Reliability](https://arxiv.org/abs/2602.16666)
   提出一组将模型能力与运行可靠性拆开衡量的 agent 可靠性指标。
+
+- [VeRO: An Evaluation Harness for Agents to Optimize Agents](https://arxiv.org/abs/2602.22480)
+  针对“agent 优化 agent”这一新型工作流提出专用评测 harness，包含版本化快照、预算控制运行和结构化 trace。
 
 ### 相关 Awesome 列表
 
