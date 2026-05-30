@@ -3,7 +3,7 @@
 本仓库聚焦 **Harness Engineering** 与 **AI Native Engineering** 的高相关英文与中文资料，并补充 GitHub 开源工具。
 仅保留与平台工程、AI Native 工程实践直接相关的条目，工具均附带当时抓取的 GitHub star 数。
 
-最近检索：2026-05-26（Asia/Shanghai）。
+最近检索：2026-05-30（Asia/Shanghai）。
 
 ## 1）文章
 
@@ -33,6 +33,12 @@
 - [Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering](https://arxiv.org/abs/2604.08224)
   一篇最新的系统综述，解释为什么 agent 能力越来越依赖记忆、skills、协议和 harness 这些外化组件，而不只是模型权重本身。
 
+- [AI Harness Engineering: A Runtime Substrate for Foundation-Model Software Agents](https://arxiv.org/abs/2605.13357)
+  将 harness 形式化为模型与环境之间的运行时基座，覆盖任务规格、上下文选择、工具、记忆、状态、可观测性、失败归因、验证、权限、熵审计和人工介入记录等职责。
+
+- [Code as Agent Harness](https://arxiv.org/abs/2605.18747)
+  将代码重新定义为 agent 推理、行动、环境建模、记忆、验证和多智能体协作的可执行基座。
+
 ### Harness / 平台工程实践
 
 - [Harness AI 概览](https://developer.harness.io/docs/platform/harness-ai/overview/)
@@ -47,8 +53,14 @@
 - [Harness 刷新 IDP，平台工程师可更精细控制平台](https://platformengineering.com/social-facebook/harness-revamps-idp-to-give-platform-engineers-more-granular-controls/)
   说明 Harness IDP 的平台权限、治理与自助式交付能力演进。
 
+- [Harness engineering: Agent harnesses as critical infrastructure](https://www.techtarget.com/searchapparchitecture/tip/Harness-engineering-Agent-harnesses-as-critical-infrastructure)
+  面向企业读者梳理 harness 的关键组件，包括编排、记忆、护栏、反馈回路、运行时可观测性和安全规模化。
+
 - [构建 AI-Native 平台：平台工程师如何规模化交付](https://platformengineering.com/features/building-the-ai-native-platform-what-engineers-need-to-scale-successfully/)
   讲清楚平台团队在 AI-Native 时代从“工具拼接”转向“运营交付平台化”的关键变化。
+
+- [Platform Engineering Becomes the Control Plane for Enterprise AI](https://platformengineering.com/features/platform-engineering-becomes-the-control-plane-for-enterprise-ai/)
+  说明平台团队应提供受治理的工作流、RBAC、验证和 agent 专属授权模型，而不是让 agent 直接继承人的全部权限。
 
 - [从云原生走向 AI-Native：平台工程为何成为企业 OS](https://platformengineering.com/features/from-cloud-native-to-ai-native-why-platform-engineering-is-becoming-the-enterprise-os/)
   关注 AI 时代平台工程在成本治理、能力边界和团队模式上的新要求。
@@ -84,6 +96,9 @@
 
 - [Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
   将“写 prompt”扩展为“设计系统提示、工具、历史和状态”的整体上下文工程问题。
+
+- [Harness engineering and agent feedback: Exploring AI coding sensors](https://www.thoughtworks.com/en-us/insights/blog/generative-ai/harness-engineering-agent-feedback-exploring-ai-coding-sensors)
+  将 feedback sensors 补进 skills 与 guardrails 之外的 harness 设计，强调测试、lint 和运行时检查这类确定性反馈信号。
 
 - [Prompt Caching — Claude API Docs](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching)
   解释如何通过缓存系统提示、工具定义和长文档来降低 agent 成本与延迟。
@@ -122,6 +137,9 @@
 
 - [SemaClaw: A Step Towards General-Purpose Personal AI Agents through Harness Engineering](https://arxiv.org/abs/2604.11548)
   提出一个面向个人智能体的框架，结合 DAG 编排、PermissionBridge 安全系统、三层上下文管理和 agentic wiki skills。
+
+- [Meta-Engineering Harnesses for AI-Native Software Production: A Contract-Driven Adversarial Verification Architecture with Early Deployment Report](https://arxiv.org/abs/2605.25665)
+  提出面向持续软件生产的 meta-engineering harness，包含契约编译、角色化 agent、独立与对抗式验证、失败仲裁和外层校准机制。
 
 - [平台工程的未来是 AI Native 开发](https://platformengineering.com/features/i-saw-the-future-of-platform-engineering-and-its-called-ai-native-dev/)
   强调平台团队如何重构流程边界以适配智能体和 AI 参与的交付链路。
@@ -388,6 +406,9 @@
 
 - [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents)
   用 model、harness、tools、environment 四层模型解释 agent 风险，并把“可信智能体”原则落到具体产品控制点上。
+
+- [How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude)
+  Anthropic 总结 Claude.ai、Claude Code 与 Claude Cowork 的 containment 经验，重点是环境边界、沙箱 / VM、出站流量控制和工具输出检查。
 
 - [Designing AI agents to resist prompt injection](https://openai.com/index/designing-agents-to-resist-prompt-injection/)
   把 prompt injection 重新定义为社会工程问题，强调 source-sink 控制、确认机制和沙箱边界，而不是只做输入过滤。

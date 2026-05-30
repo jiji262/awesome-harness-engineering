@@ -5,7 +5,7 @@ Entries are filtered for direct relevance. GitHub projects include star counts a
 
 <b> Special Thanks to </b> [linux.do](https://linux.do)
 
-Last researched: 2026-05-26 (Asia/Shanghai).
+Last researched: 2026-05-30 (Asia/Shanghai).
 
 ## 1) Articles
 
@@ -35,6 +35,12 @@ Last researched: 2026-05-26 (Asia/Shanghai).
 - [Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering](https://arxiv.org/abs/2604.08224)
   A fresh systems review of why agent capability is increasingly externalized into memory, skills, protocols, and harnesses rather than model weights alone.
 
+- [AI Harness Engineering: A Runtime Substrate for Foundation-Model Software Agents](https://arxiv.org/abs/2605.13357)
+  Formalizes harness as the runtime substrate between model and environment, with responsibilities spanning task specification, context selection, tools, memory, state, observability, failure attribution, verification, permissions, entropy auditing, and intervention records.
+
+- [Code as Agent Harness](https://arxiv.org/abs/2605.18747)
+  Frames code as the executable substrate for agent reasoning, action, environment modeling, memory, verification, and multi-agent coordination.
+
 ### Harness / Platform Engineering in Practice
 
 - [Harness AI Overview](https://developer.harness.io/docs/platform/harness-ai/overview/)
@@ -49,8 +55,14 @@ Last researched: 2026-05-26 (Asia/Shanghai).
 - [Harness Revamps IDP to Give Platform Engineers More Granular Controls](https://platformengineering.com/social-facebook/harness-revamps-idp-to-give-platform-engineers-more-granular-controls/)
   Describes ownership and governance updates in Harness Internal Developer Portal.
 
+- [Harness engineering: Agent harnesses as critical infrastructure](https://www.techtarget.com/searchapparchitecture/tip/Harness-engineering-Agent-harnesses-as-critical-infrastructure)
+  Enterprise-facing overview of harness components such as orchestration, memory, guardrails, feedback loops, runtime observability, and safe scale-out.
+
 - [Building the AI-Native Platform: What Engineers Need to Scale Successfully](https://platformengineering.com/features/building-the-ai-native-platform-what-engineers-need-to-scale-successfully/)
   Explains how platform teams shift from tool stitching to AI-native operating models.
+
+- [Platform Engineering Becomes the Control Plane for Enterprise AI](https://platformengineering.com/features/platform-engineering-becomes-the-control-plane-for-enterprise-ai/)
+  Argues that platform teams should expose governed workflows, RBAC, validation, and agent-specific authorization instead of giving agents raw human privileges.
 
 - [From Cloud-Native to AI-Native: Why Platform Engineering Is Becoming the Enterprise OS](https://platformengineering.com/features/from-cloud-native-to-ai-native-why-platform-engineering-is-becoming-the-enterprise-os/)
   Shows why platform control, cost governance, and reliability become more critical with AI workloads.
@@ -86,6 +98,9 @@ Last researched: 2026-05-26 (Asia/Shanghai).
 
 - [Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
   Reframes prompt design as a broader context-shaping problem across system prompts, tools, history, and state.
+
+- [Harness engineering and agent feedback: Exploring AI coding sensors](https://www.thoughtworks.com/en-us/insights/blog/generative-ai/harness-engineering-agent-feedback-exploring-ai-coding-sensors)
+  Adds feedback sensors to feed-forward skills and guardrails, emphasizing deterministic signals such as tests, linters, and runtime checks.
 
 - [Prompt Caching — Claude API Docs](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching)
   Documents one of the most practical harness-level optimizations for reducing agent cost and latency.
@@ -124,6 +139,9 @@ Last researched: 2026-05-26 (Asia/Shanghai).
 
 - [SemaClaw: A Step Towards General-Purpose Personal AI Agents through Harness Engineering](https://arxiv.org/abs/2604.11548)
   Presents a personal-agent framework with DAG orchestration, PermissionBridge safety, three-tier context management, and agentic wiki skills.
+
+- [Meta-Engineering Harnesses for AI-Native Software Production: A Contract-Driven Adversarial Verification Architecture with Early Deployment Report](https://arxiv.org/abs/2605.25665)
+  Introduces contract compilation, role-specialized agents, independent and adversarial verification, failure arbitration, and outer-loop calibration for ongoing software production.
 
 - [I Saw the Future of Platform Engineering — and It’s Called AI Native Dev](https://platformengineering.com/features/i-saw-the-future-of-platform-engineering-and-its-called-ai-native-dev/)
   Explains how platform operations and handoff patterns change when teams adopt AI-native workflows.
@@ -390,6 +408,9 @@ Last researched: 2026-05-26 (Asia/Shanghai).
 
 - [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents)
   Explains agent risk through the four-layer model of model, harness, tools, and environment, then maps trustworthy-agent principles to concrete product controls.
+
+- [How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude)
+  Anthropic's containment lessons across Claude.ai, Claude Code, and Claude Cowork, emphasizing environment boundaries, sandbox and VM patterns, egress controls, and tool-output inspection.
 
 - [Designing AI agents to resist prompt injection](https://openai.com/index/designing-agents-to-resist-prompt-injection/)
   Reframes prompt injection as a social-engineering problem and argues for source-sink controls, confirmations, and sandboxed action boundaries instead of input filtering alone.
