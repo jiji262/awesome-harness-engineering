@@ -399,6 +399,9 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 - [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) — **9,182 stars**
   Self-hostable tracing and evaluation UI for inspecting and replaying agent workflows.
 
+- [luoyuctl/agenttrace](https://github.com/luoyuctl/agenttrace) — **35 stars**
+  Local-first TUI and report generator for AI coding-agent session observability across local logs, covering cost, tokens, latency, tool failures, health, diffs, reports, and CI gates.
+
 ## 4) Security, Evals & Related Lists
 
 ### Security & Permissions
