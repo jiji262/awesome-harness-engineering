@@ -205,6 +205,9 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 - [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) — **30,349 stars**
   A browser automation MCP server that shows how GUI/web tooling can be exposed safely to agents.
 
+- [looptroop-ai/LoopTroop](https://github.com/looptroop-ai/LoopTroop) — **20 stars**
+  Local-first GUI harness for long-running AI coding featuring LLM-Council planning, atomic Beads in isolated git worktrees, and fresh-context Ralph-Loop recovery.
+
 ### Harness / Platform Engineering
 
 - [harness/harness](https://github.com/harness/harness) — **33,987 stars**
