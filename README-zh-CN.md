@@ -203,6 +203,9 @@
 - [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) — **30,349 星**
   典型的浏览器自动化 MCP Server，展示 GUI / Web 能力如何安全暴露给 agent。
 
+- [looptroop-ai/LoopTroop](https://github.com/looptroop-ai/LoopTroop) — **20 星**
+  本地优先的 GUI 编码智能体 harness，支持多模型委员会规划、Git 隔离工作区中的原子任务执行与 Ralph-Loop 失败自动恢复。
+
 ### Harness / 平台工程
 
 - [harness/harness](https://github.com/harness/harness) — **33,987 星**
