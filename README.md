@@ -399,6 +399,9 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 - [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) — **9,182 stars**
   Self-hostable tracing and evaluation UI for inspecting and replaying agent workflows.
 
+- [Necmttn/ax](https://github.com/Necmttn/ax) — **32 stars**
+  Local graph for coding-agent sessions, costs, skills, tools, and telemetry.
+
 ## 4) Security, Evals & Related Lists
 
 ### Security & Permissions

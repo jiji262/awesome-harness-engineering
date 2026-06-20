@@ -397,6 +397,9 @@
 - [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) — **9,182 星**
   可自托管的 tracing 与 eval 界面，方便回放和排查 agent 工作流。
 
+- [Necmttn/ax](https://github.com/Necmttn/ax) — **32 星**
+  面向 AI 编码 agent 会话、成本、技能、工具和 OTLP 遥测的本地优先可观测与记忆图。
+
 ## 4）安全、评测与相关列表
 
 ### 安全与权限
