@@ -371,6 +371,9 @@
 - [ServiceNow/BrowserGym](https://github.com/ServiceNow/BrowserGym) — **1,229 星**
   面向 Web agent 的 Gym-style 环境，内置 MiniWoB、WebArena、VisualWebArena、WorkArena、AssistantBench、OpenApps 和 TimeWarp。
 
+- [TIGER-AI-Lab/ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) — **525 星**
+  面向真实网站浏览器智能体的 benchmark，包含 283 个日常任务、隔离 Docker 运行、请求拦截和可回放五层轨迹，并支持多种 agent harness；详见[项目主页](https://claw-bench.com/)。
+
 - [xlang-ai/OSWorld](https://github.com/xlang-ai/OSWorld) — **2,875 星**
   在真实操作系统环境中评测多模态 computer-use agent，适合桌面智能体与 GUI 自动化 harness 设计。
 

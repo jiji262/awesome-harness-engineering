@@ -373,6 +373,9 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 - [ServiceNow/BrowserGym](https://github.com/ServiceNow/BrowserGym) — **1,229 stars**
   Gym-style environment for web agents, bundling MiniWoB, WebArena, VisualWebArena, WorkArena, AssistantBench, OpenApps, and TimeWarp.
 
+- [TIGER-AI-Lab/ClawBench](https://github.com/TIGER-AI-Lab/ClawBench) — **525 stars**
+  Live-web benchmark for browser agents with 283 everyday tasks, isolated Docker runs, request interception, and replayable five-layer traces across multiple agent harnesses; see the [project site](https://claw-bench.com/).
+
 - [xlang-ai/OSWorld](https://github.com/xlang-ai/OSWorld) — **2,875 stars**
   Multimodal computer-use benchmark in real OS environments, useful for desktop-agent harness and GUI automation evaluation.
 
