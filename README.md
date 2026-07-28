@@ -438,6 +438,9 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 - [TerminalWorld: Benchmarking Agents on Real-World Terminal Tasks](https://arxiv.org/abs/2605.22535)
   May 2026 benchmark generated from in-the-wild terminal recordings, complementing expert-curated terminal benchmarks with authentic shell workflows.
 
+- [ClawBench](https://claw-bench.com/)
+  Open benchmark for web agents covering 303 real-world tasks on live websites and long-horizon workflows. Reproducible Docker runs capture browser actions, screenshots, HTTP traffic, and agent transcripts; see the [paper](https://arxiv.org/abs/2603.18582) and [source](https://github.com/reacher-z/ClawBench).
+
 - [SWE-Skills-Bench: Do Agent Skills Actually Help in Real-World Software Engineering?](https://arxiv.org/abs/2603.15401)
   Evaluates whether injected agent skills materially improve real software engineering tasks, with paired runs and execution-based verification.
 
