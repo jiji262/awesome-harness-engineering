@@ -432,6 +432,8 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 
 ### Evals & Verification
 
+- [ClawBench](https://github.com/reacher-z/ClawBench) — Browser-agent benchmark covering 283 tasks (V1 153 + V2 130) across 163 live websites, with multi-layer traces and request-level outcome evaluation.
+
 - [Workspace-Bench 1.0: Benchmarking AI Agents on Workspace Tasks with Large-Scale File Dependencies](https://arxiv.org/abs/2605.03596)
   May 2026 benchmark for workspace-level agents, stressing large file dependency graphs, cross-file retrieval, contextual reasoning, and adaptive decision-making.
 
