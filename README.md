@@ -399,6 +399,9 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 - [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) — **9,182 stars**
   Self-hostable tracing and evaluation UI for inspecting and replaying agent workflows.
 
+- [vostride/agent-qa](https://github.com/vostride/agent-qa) — **933 stars**
+  QA harness for natural-language web and mobile regression tests, with execution memory, same-run recovery from UI changes, and integrations for coding agents.
+
 ## 4) Security, Evals & Related Lists
 
 ### Security & Permissions

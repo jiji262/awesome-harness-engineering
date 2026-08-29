@@ -397,6 +397,9 @@
 - [Arize-ai/phoenix](https://github.com/Arize-ai/phoenix) — **9,182 星**
   可自托管的 tracing 与 eval 界面，方便回放和排查 agent 工作流。
 
+- [vostride/agent-qa](https://github.com/vostride/agent-qa) — **933 星**
+  面向 Web 和移动端自然语言回归测试的 QA harness，具备执行记忆、UI 变化后的同次运行恢复能力，并提供 coding agent 集成。
+
 ## 4）安全、评测与相关列表
 
 ### 安全与权限
