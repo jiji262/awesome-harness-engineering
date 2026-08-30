@@ -184,6 +184,9 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 - [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) — **70,670 stars**
   A production-grade coding agent architecture with runtime isolation, event streaming, and controller layers worth studying.
 
+- [sandbaseai/sandbase-harness](https://github.com/sandbaseai/sandbase-harness) — **638 stars**
+  A local-first, self-hosted agent runtime with persistent sessions, MCP tool boundaries, permissions, audit/replay, and local or containerized deployment paths.
+
 - [browser-use/browser-use](https://github.com/browser-use/browser-use) — **86,220 stars**
   A clean browser-agent harness showing how DOM state, actions, and retries fit into a minimal loop.
 
