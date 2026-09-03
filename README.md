@@ -205,6 +205,9 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 - [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) — **30,349 stars**
   A browser automation MCP server that shows how GUI/web tooling can be exposed safely to agents.
 
+- [KongFangXun/sofagent](https://github.com/KongFangXun/sofagent) — **42 stars**
+  An audit-first governance harness for AI coding agents: 24 rules enforced at commit time, HMAC-chained audit log, and snapshot rollback — a working reference for commit-time guardrails.
+
 ### Harness / Platform Engineering
 
 - [harness/harness](https://github.com/harness/harness) — **33,987 stars**
