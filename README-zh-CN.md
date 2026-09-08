@@ -39,6 +39,9 @@
 - [Code as Agent Harness](https://arxiv.org/abs/2605.18747)
   将代码重新定义为 agent 推理、行动、环境建模、记忆、验证和多智能体协作的可执行基座。
 
+- [Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report](https://arxiv.org/abs/2608.15763)
+  在训练中变化 Skills、工具 Schema、提示词和 Hooks，研究紧凑模型对后续 Harness 更新的适应能力，并报告直播电商部署结果。
+
 ### Harness / 平台工程实践
 
 - [Harness AI 概览](https://developer.harness.io/docs/platform/harness-ai/overview/)
