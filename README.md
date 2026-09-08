@@ -41,6 +41,9 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 - [Code as Agent Harness](https://arxiv.org/abs/2605.18747)
   Frames code as the executable substrate for agent reasoning, action, environment modeling, memory, verification, and multi-agent coordination.
 
+- [Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report](https://arxiv.org/abs/2608.15763)
+  Studies training across changing Skills, tool schemas, prompts, and Hooks so a compact agent can adapt to later harness edits; includes a live-commerce deployment.
+
 ### Harness / Platform Engineering in Practice
 
 - [Harness AI Overview](https://developer.harness.io/docs/platform/harness-ai/overview/)
