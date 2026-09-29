@@ -336,6 +336,9 @@
 - [ServiceNow/AgentLab](https://github.com/ServiceNow/AgentLab) — **541 星**
   以企业级任务为入口评估智能体工作流可行性。
 
+- [louis030195/hyperconsciousness](https://github.com/louis030195/hyperconsciousness) - **2 星**
+  处于开发者 Alpha 阶段的加密、仅追加知识存储，通过限定范围且有时效的 MCP 授权，为智能体提供跨会话上下文。
+
 ### 评测框架与 Agent Benchmarks
 
 - [openai/evals](https://github.com/openai/evals) — **18,536 星**
