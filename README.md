@@ -338,6 +338,9 @@ Last researched: 2026-05-30 (Asia/Shanghai).
 - [ServiceNow/AgentLab](https://github.com/ServiceNow/AgentLab) — **541 stars**
   Evaluation-oriented platform for testing agent workflows in realistic enterprise tasks.
 
+- [louis030195/hyperconsciousness](https://github.com/louis030195/hyperconsciousness) - **2 stars**
+  Developer-alpha encrypted, append-only knowledge store with scoped, expiring MCP grants for context across agent sessions.
+
 ### Evaluation Frameworks & Agent Benchmarks
 
 - [openai/evals](https://github.com/openai/evals) — **18,536 stars**
