@@ -331,6 +331,9 @@ Last researched: 2026-11-18 (Asia/Shanghai).
 - [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) — **39,786 stars**
   A browser automation MCP server that shows how GUI/web tooling can be exposed safely to agents.
 
+- [vitalik1921/cage](https://github.com/vitalik1921/cage) — **2 stars**
+  TypeScript coding-agent harness that keeps Markdown contracts, implementations, invariant-linked tests, and review freshness synchronized for Claude Code and Codex.
+
 ### Harness / Platform Engineering
 
 - [harness/harness](https://github.com/harness/harness) — **38,931 stars**
