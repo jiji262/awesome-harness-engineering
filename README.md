@@ -104,6 +104,9 @@ Last researched: 2026-11-18 (Asia/Shanghai).
 - [google-deepmind/amplio](https://github.com/google-deepmind/amplio) — **106 stars**
   Google DeepMind's lightweight reference agent harness engineered for robust long-horizon runs.
 
+- [Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report](https://arxiv.org/abs/2608.15763)
+  Studies training across changing Skills, tool schemas, prompts, and Hooks so a compact agent can adapt to later harness edits; includes a live-commerce deployment.
+
 ### Harness / Platform Engineering in Practice
 
 - [Harness AI Overview](https://developer.harness.io/docs/platform/harness-ai/overview/)
