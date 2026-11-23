@@ -534,6 +534,9 @@ Last researched: 2026-11-18 (Asia/Shanghai).
 - [FailproofAI/failproofai](https://github.com/FailproofAI/failproofai) — **9,547 stars**
   Runtime observability and policy enforcement layer for capturing and guarding agent harness executions.
 
+- [vibeshield-mod](https://github.com/zColdWater/vibeshield-claude-mod)
+  Zero-dependency, zero-network Claude Code function-hooks guardrail mod that intercepts `Write`, `Edit`, and `Bash` tool calls in-memory to block `NEXT_PUBLIC_*`/`VITE_*` secret exposure, hardcoded live credentials in frontend bundles, and accidental `git add .env`.
+
 ## 4) Security, Evals & Related Lists
 
 ### Security & Permissions
